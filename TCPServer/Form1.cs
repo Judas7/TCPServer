@@ -36,7 +36,7 @@ namespace TCPServer
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            listener = new TcpListener(IPAddress.Any, port);
+            listener = new TcpListener(IPAddress.Any, port); 
             listener.Start();
             client = listener.AcceptTcpClient();
 
